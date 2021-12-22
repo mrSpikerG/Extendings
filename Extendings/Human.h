@@ -17,6 +17,9 @@ public:
 
 	Human(char* name,char* gender,int age)
 	{
+		this->name = new char[100];
+		this->gender = new char[100];
+
 		//Копируем данные с параметров в класс
 		strcpy_s(this->gender, strlen(gender) + 1, gender);
 		strcpy_s(this->name, strlen(name) + 1, name);
@@ -38,7 +41,7 @@ public:
 
 	//Функции которые пригодятся когда мы узнаем о virtual, override и final
 	char* getGender()  {
-		return name;
+		return gender;
 	}
 	void setGender(char* gender) {
 		strcpy_s(this->gender, strlen(gender) + 1, gender);

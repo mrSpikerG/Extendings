@@ -9,6 +9,11 @@ protected:
 	// Пусто :(
 public:
 
+	student(char* name, char* gender, int age) : schoolBoy(name, gender, age)
+	{
+
+	}
+
 	student(int* marks, size_t size, char* name, char* gender, int age) : schoolBoy(name, gender, age)
 	{
 		//работает присвоение даже при том, что данные переменные не указаны ни в protected, ни в private

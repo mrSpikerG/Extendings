@@ -14,7 +14,8 @@ public:
 	//наследуем конструкторы Human 
 	schoolBoy(char* name, char* gender, int age) : Human(name, gender, age)
 	{
-
+		marks = nullptr;
+		size = 0;
 	}
 
 	//более полезный конструктор с наследованием
